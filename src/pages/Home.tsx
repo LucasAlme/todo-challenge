@@ -42,8 +42,9 @@ export function Home() {
 
       <TasksList
         tasks={tasks}
-        toggleTaskDone={handleToggleTaskDone}
-        removeTask={handleRemoveTask}
+        toggleTaskDone={(id) => handleToggleTaskDone(id)}
+        removeTask={(id) => handleRemoveTask(id)}
+
       />
     </View>
   )
